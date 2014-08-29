@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="mobileWebApp">
+<head>
+	<title></title>
+	<meta name="author" content="">
+
+	<meta charset="utf-8">
+	<meta name="description" content="Mobile Web Iteration">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap compiled CSS -->
+	<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-hearder">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>	
+                <a href="#" class="navbar-brand">Mobile Web App</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/" active-link>Home</a></li>
+                    <li><a href="#/phones" active-link>Phones</a></li>
+                    <li><a href="#/plans" active-link>Plans</a></li>
+                    <li><a href="#/cart" active-link>Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ng-view></ng-view>
+
+	<!-- Required externally sourced Javascript files: -->
+	<script type="text/javascript" src="jQuery/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="AngularJS-1.2.9/angular.js"></script>
+	<script type="text/javascript" src="AngularJS-1.2.9/angular-route.js"></script>
+	<script type="text/javascript" src="AngularJS-1.2.9/angular-resource.js"></script>
+	<script type="text/javascript" src="AngularJS-1.2.9/angular-animate.js"></script>
+	<script type="text/javascript" src="bootstrap-3.1.1-dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="angular-ui-bootstrap-0.10.0/ui-bootstrap-tpls.js"></script>
+	<!-- Your application Javascript: -->
+	<script type="text/javascript" src="scripts/application.js"></script>
+</body>
+</html>
